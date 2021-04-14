@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ui_navigation"
+    app:startDestination="@id/movieListFragment">
+
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.eduardocavalcanti.nomecriativoparaaplicativodefilme.ui.MovieListFragment"
+        android:label="fragment_movie_list"
+        tools:layout="@layout/fragment_movie_list" >
+        <action
+            android:id="@+id/action_movieListFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"
+            app:enterAnim="@anim/slide_right_to_left"
+            app:popEnterAnim="@anim/fade"
+            app:popExitAnim="@anim/slide_left_to_right" />
+        <action
+            android:id="@+id/action_movieListFragment_to_favoriteMoviesFragment"
+            app:destination="@id/favoriteMoviesFragment"
+            app:enterAnim="@anim/slide_up_to_bottom" />
+        <action
+            android:id="@+id/action_movieListFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_up_to_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.eduardocavalcanti.nomecriativoparaaplicativodefilme.ui.MovieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail" >
+        <argument
+            android:name="movieItem"
+            app:argType="com.eduardocavalcanti.nomecriativoparaaplicativodefilme.data.Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteMoviesFragment"
+        android:name="com.eduardocavalcanti.nomecriativoparaaplicativodefilme.ui.FavoriteMoviesFragment"
+        android:label="fragment_favorite_movies"
+        tools:layout="@layout/fragment_favorite_movies" >
+        <action
+            android:id="@+id/action_favoriteMoviesFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"
+            app:enterAnim="@anim/slide_right_to_left"
+            app:popEnterAnim="@anim/fade"
+            app:popExitAnim="@anim/slide_left_to_right" />
+        <action
+            android:id="@+id/action_favoriteMoviesFragment_to_movieListFragment"
+            app:destination="@id/movieListFragment"
+            app:enterAnim="@anim/slide_up_to_bottom" />
+        <action
+            android:id="@+id/action_favoriteMoviesFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_up_to_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.eduardocavalcanti.nomecriativoparaaplicativodefilme.ui.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment"
+            app:enterAnim="@anim/slide_right_to_left"
+            app:popEnterAnim="@anim/fade"
+            app:popExitAnim="@anim/slide_left_to_right"
+            app:popUpTo="@id/searchFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_searchFragment_to_favoriteMoviesFragment"
+            app:destination="@id/favoriteMoviesFragment"
+            app:enterAnim="@anim/slide_up_to_bottom" />
+        <action
+            android:id="@+id/action_searchFragment_to_movieListFragment"
+            app:destination="@id/movieListFragment"
+            app:enterAnim="@anim/slide_up_to_bottom" />
+    </fragment>
+</navigation>

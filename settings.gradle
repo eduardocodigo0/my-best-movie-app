@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Nome criativo para aplicativo de filme"

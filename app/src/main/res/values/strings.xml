@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My Movie App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Fragment movie list -->
+    <string name="search_button_text">Search</string>
+    <string name="search_field_hint">Movie title..</string>
+    <string name="text_view_from_recyclerview_item_default_text">Example the movie</string>
+    <string name="text_view_adult_movie_text">Adult</string>
+    <string name="buttom_details_text">More details...</string>
+
+
+    <string name="menu_item_favorites">Favorites</string>
+    <string name="menu_item_movie_list">Popular</string>
+    <string name="details_movie_title_label">Title:</string>
+    <string name="release_date_label">Release Date:</string>
+    <string name="label_score">Score:</string>
+    <string name="label_adult_content">Adult Content:</string>
+    <string name="label_set_favorite">Set Favorite!</string>
+    <string name="list_item_score_placeholder">10.0</string>
+    <string name="menu_item_search">Search</string>
+    <string name="favorite_movies_title">My Favorite Movies</string>
+    <string name="movie_detail_title_placeholder">My Cool movie title</string>
+    <string name="movie_detail_overview_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere sem in metus cursus, a accumsan purus molestie. Aliquam dui arcu, rhoncus in blandit eu, ultrices vitae neque. Ut consectetur tellus id tellus dignissim vehicula. Donec feugiat nisl sit amet ullamcorper posuere. Sed tempor urna ac mattis auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam pretium rhoncus sem, a eleifend leo convallis ut. Nullam vel dolor urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id nibh at leo lobortis interdum vel quis sem. Phasellus quis ipsum dapibus, elementum leo sed, imperdiet dolor.</string>
+    <string name="movie_detail_releasedate_placeholder">00/00/00</string>
+    <string name="movie_detail_score_placeholder">10.0</string>
+    <string name="popular_movies_list_title">Popular Movies List</string>
+
+    <string name="empty_search_request">The search must not be empty!</string>
+
+    <string name="movie_detail_star_not_favorited_label">Set Favorite</string>
+    <string name="movie_detail_star_favorited_label">Favorite!</string>
+
+</resources>

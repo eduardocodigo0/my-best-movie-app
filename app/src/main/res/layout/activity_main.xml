@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <VideoView
+        android:id="@+id/vv_background_video"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+        <fragment
+            android:id="@+id/f_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bnv_bottom_menu"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/main_ui_navigation" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv_bottom_menu"
+        app:menu="@menu/main_menu"
+        app:layout_constraintBottom_toTopOf="@id/f_host_fragment"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        android:background="@color/blood"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>
