@@ -1,5 +1,9 @@
 # My movie app
  An app for searching and saving your popular movies so you can remember them later
+
+## API
+
+https://developers.themoviedb.org/3/getting-started/introduction
  
 ## Features
 
